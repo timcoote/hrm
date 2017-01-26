@@ -117,9 +117,30 @@
     if( [self isLECapableHardware] )
     {
         autoConnect = FALSE;
+        NSLog(@"in openScanSheet");
         [arrayController removeObjects:heartRateMonitors];
-        [NSApp beginSheet:self.scanSheet modalForWindow:self.window modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:nil];
+//        [NSApp beginSheet:self.scanSheet modalForWindow:self.window modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:nil];
+        
+        [self.window beginSheet:self.scanSheet  completionHandler:^(NSModalResponse returnCode) {
+            NSLog(@"Sheet closed");
+
+            switch (returnCode) {
+            case NSModalResponseOK:
+                NSLog(@"Done button tapped in Custom Sheet %lu", [self.arrayController.selectionIndexes count]);
+                    [self sheetDidEnd: self.scanSheet returnCode: returnCode];
+                break;
+            case NSModalResponseCancel:
+                NSLog(@"Cancel button tapped in Custom Sheet");
+                break;
+                
+            default:
+                NSLog(@"Unidentified exit button pressed");
+                break;
+        }
+    }];
         [self startScan];
+        NSLog(@"leaving openScanSheet");
+
     }
 }
 
@@ -128,8 +149,10 @@
 */
 - (IBAction)closeScanSheet:(id)sender 
 {
-    [NSApp endSheet:self.scanSheet returnCode:NSAlertDefaultReturn];
-    [self.scanSheet orderOut:self];    
+//    [NSApp endSheet:self.scanSheet returnCode:NSAlertDefaultReturn];
+    NSLog(@"closeScanSheet");
+    [self.window endSheet:self.scanSheet returnCode:NSModalResponseOK];
+//    [self.scanSheet orderOut:self];
 }
 
 /*
@@ -137,17 +160,20 @@
 */
 - (IBAction)cancelScanSheet:(id)sender 
 {
-    [NSApp endSheet:self.scanSheet returnCode:NSAlertAlternateReturn];
-    [self.scanSheet orderOut:self];
+//    [NSApp endSheet:self.scanSheet returnCode:NSAlertAlternateReturn];
+    [self.window endSheet:self.scanSheet returnCode:NSModalResponseCancel];
+//    [self.scanSheet orderOut:self];
 }
 
 /* 
  This method is called when Scan sheet is closed. Initiate connection to selected heart rate peripheral
 */
-- (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo 
+//- (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo
+- (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSModalResponse)returnCode
 {
+    NSLog(@"sheetDidEnd, setting up");
     [self stopScan];
-    if( returnCode == NSAlertDefaultReturn )
+    if( returnCode == NSModalResponseOK )
     {
         NSIndexSet *indexes = [self.arrayController selectionIndexes];
         if ([indexes count] != 0) 
@@ -171,8 +197,9 @@
  */
 - (IBAction)connectButtonPressed:(id)sender
 {
-    if(peripheral && ([peripheral isConnected]))
-    { 
+//    if(peripheral && ([peripheral isConnected]))
+    if(peripheral && (peripheral.state != CBPeripheralStateConnected))
+    {
         /* Disconnect if it's already connected */
         [manager cancelPeripheralConnection:peripheral]; 
     }
@@ -496,7 +523,7 @@
 /*
  Invoked upon completion of a -[readValueForCharacteristic:] request or on the reception of a notification/indication.
  */
-- (void) peripheral:(CBPeripheral *)aPeripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error 
+- (void) peripheral:(CBPeripheral *)aPeripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
     /* Updated value for heart rate measurement received */
     if ([characteristic.UUID isEqual:[CBUUID UUIDWithString:@"2A37"]]) 
