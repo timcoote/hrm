@@ -1,3 +1,7 @@
+### modifications for interaction with non-heart rate devices have been added to this commit. To
+### get a working HRM version, eg for use with PunchThrough simulator; use commit: e77567f
+
+
 ### CoreBluetooth: Heart Rate Monitor ###
 
 ===========================================================================

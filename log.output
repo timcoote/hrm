@@ -1,0 +1,70 @@
+2017-02-03 14:47:21.839758 HeartRateMonitor[21811:11754453] Found something
+2017-02-03 14:47:21.839789 HeartRateMonitor[21811:11754453] Central manager state: Powered on
+2017-02-03 14:47:24.313974 HeartRateMonitor[21811:11754453] Central manager state: Powered on
+2017-02-03 14:47:24.314014 HeartRateMonitor[21811:11754453] in openScanSheet
+2017-02-03 14:47:24.636686 HeartRateMonitor[21811:11754453] leaving openScanSheet
+2017-02-03 14:47:29.803474 HeartRateMonitor[21811:11754453] Found a something
+2017-02-03 14:47:29.806586 HeartRateMonitor[21811:11754453] Found a something
+2017-02-03 14:47:30.543885 HeartRateMonitor[21811:11754453] closeScanSheet
+2017-02-03 14:47:30.544008 HeartRateMonitor[21811:11754453] Sheet closed
+2017-02-03 14:47:30.544027 HeartRateMonitor[21811:11754453] Done button tapped in Custom Sheet 1
+2017-02-03 14:47:30.544036 HeartRateMonitor[21811:11754453] sheetDidEnd, setting up
+2017-02-03 14:47:34.726510 HeartRateMonitor[21811:11754453] Service found with UUID: Unknown (<1809>)
+2017-02-03 14:47:34.726699 HeartRateMonitor[21811:11754453] Service found with UUID: Device Information
+2017-02-03 14:47:34.726895 HeartRateMonitor[21811:11754453] Service found with UUID: Battery
+2017-02-03 14:47:34.727129 HeartRateMonitor[21811:11754453] Service found with UUID: Unknown (<79f7744a f8e64810 8f16140b 6974835d>)
+2017-02-03 14:47:35.915624 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Unknown (<2a1c>)
+2017-02-03 14:47:37.205409 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Model Number String
+2017-02-03 14:47:37.205595 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Serial Number String
+2017-02-03 14:47:37.205733 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Firmware Revision String
+2017-02-03 14:47:37.205859 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Hardware Revision String
+2017-02-03 14:47:37.205983 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Manufacturer Name String
+2017-02-03 14:47:37.206052 HeartRateMonitor[21811:11754453] Found a Device Manufacturer Name Characteristic
+2017-02-03 14:47:37.206251 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Model Number String
+2017-02-03 14:47:37.206371 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Serial Number String
+2017-02-03 14:47:37.206494 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Firmware Revision String
+2017-02-03 14:47:37.206659 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Hardware Revision String
+2017-02-03 14:47:37.206778 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Manufacturer Name String
+2017-02-03 14:47:37.206844 HeartRateMonitor[21811:11754453] Found a Device Manufacturer Name Characteristic
+2017-02-03 14:47:37.850252 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Battery Level
+2017-02-03 14:47:39.785187 HeartRateMonitor[21811:11754453] Found specific service
+2017-02-03 14:47:39.785558 HeartRateMonitor[21811:11754453] Here's the service characteristic, Unknown (<64695f25 2326430a 985faa4a e90da42f>), service uuid, Unknown (<79f7744a f8e64810 8f16140b 6974835d>)
+2017-02-03 14:47:39.785634 HeartRateMonitor[21811:11754453] Found a Heart Rate Measurement Characteristic
+2017-02-03 14:47:39.785650 HeartRateMonitor[21811:11754453] Requesting notify for whatever's been found
+2017-02-03 14:47:39.785956 HeartRateMonitor[21811:11754453] Here's the service characteristic, Unknown (<a1193e99 73724f70 a7710414 01e6293c>), service uuid, Unknown (<79f7744a f8e64810 8f16140b 6974835d>)
+2017-02-03 14:47:39.786008 HeartRateMonitor[21811:11754453] Found a Heart Rate Measurement Characteristic
+2017-02-03 14:47:39.786023 HeartRateMonitor[21811:11754453] Requesting notify for whatever's been found
+2017-02-03 14:47:39.786218 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Unknown (<64695f25 2326430a 985faa4a e90da42f>)
+2017-02-03 14:47:39.786412 HeartRateMonitor[21811:11754453] Found a Device Something Characteristic Unknown (<a1193e99 73724f70 a7710414 01e6293c>)
+2017-02-03 14:47:40.430551 HeartRateMonitor[21811:11754453] Characteristic: <00000000 00>, properties 2, description <CBCharacteristic: 0x618000083520>
+2017-02-03 14:47:41.075240 HeartRateMonitor[21811:11754453] Characteristic: <43533031 2d3033>, properties 2, description <CBCharacteristic: 0x600000081a40>
+2017-02-03 14:47:41.720305 HeartRateMonitor[21811:11754453] Characteristic: <31303033 32313830 33>, properties 2, description <CBCharacteristic: 0x600000084650>
+2017-02-03 14:47:42.365027 HeartRateMonitor[21811:11754453] Characteristic: <312e30>, properties 2, description <CBCharacteristic: 0x60000008bd10>
+2017-02-03 14:47:43.010033 HeartRateMonitor[21811:11754453] Characteristic: <322e30>, properties 2, description <CBCharacteristic: 0x600000081130>
+2017-02-03 14:47:43.655522 HeartRateMonitor[21811:11754453] Characteristic: <4c6f6f6e 204d6564 6963616c>, properties 2, description <CBCharacteristic: 0x60000008c3a0>
+2017-02-03 14:47:44.300436 HeartRateMonitor[21811:11754453] Characteristic: <4c6f6f6e 204d6564 6963616c>, properties 2, description <CBCharacteristic: 0x60000008c3a0>
+2017-02-03 14:47:44.945382 HeartRateMonitor[21811:11754453] Characteristic: <43533031 2d3033>, properties 2, description <CBCharacteristic: 0x600000081a40>
+2017-02-03 14:47:45.590553 HeartRateMonitor[21811:11754453] Characteristic: <31303033 32313830 33>, properties 2, description <CBCharacteristic: 0x600000084650>
+2017-02-03 14:47:46.235078 HeartRateMonitor[21811:11754453] Characteristic: <312e30>, properties 2, description <CBCharacteristic: 0x60000008bd10>
+2017-02-03 14:47:46.880370 HeartRateMonitor[21811:11754453] Characteristic: <322e30>, properties 2, description <CBCharacteristic: 0x600000081130>
+2017-02-03 14:47:47.525484 HeartRateMonitor[21811:11754453] Characteristic: <4c6f6f6e 204d6564 6963616c>, properties 2, description <CBCharacteristic: 0x60000008c3a0>
+2017-02-03 14:47:48.170501 HeartRateMonitor[21811:11754453] Characteristic: <4c6f6f6e 204d6564 6963616c>, properties 2, description <CBCharacteristic: 0x60000008c3a0>
+2017-02-03 14:47:48.815130 HeartRateMonitor[21811:11754453] Characteristic: <64>, properties 2, description <CBCharacteristic: 0x618000083d90>
+2017-02-03 14:47:50.105126 HeartRateMonitor[21811:11754453] Characteristic: <0f53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:47:50.750515 HeartRateMonitor[21811:11754453] Characteristic: <0000>, properties 6, description <CBCharacteristic: 0x610000086310>
+2017-02-03 14:50:31.033741 HeartRateMonitor[21811:11754453] Characteristic: <2d53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:50:31.355737 HeartRateMonitor[21811:11754453] Characteristic: <0f53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:50:31.678636 HeartRateMonitor[21811:11754453] Characteristic: <2d53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:50:31.680607 HeartRateMonitor[21811:11754453] Characteristic: <0f53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:50:32.001045 HeartRateMonitor[21811:11754453] Characteristic: <2d53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:50:32.006628 HeartRateMonitor[21811:11754453] Characteristic: <0f53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:50:32.006743 HeartRateMonitor[21811:11754453] Characteristic: <2d53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:50:32.006831 HeartRateMonitor[21811:11754453] Characteristic: <0f53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:50:32.323343 HeartRateMonitor[21811:11754453] Characteristic: <2d53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:50:33.935843 HeartRateMonitor[21811:11754453] Characteristic: <0f53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:50:35.226262 HeartRateMonitor[21811:11754453] Characteristic: <2d53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:50:47.481321 HeartRateMonitor[21811:11754453] Characteristic: <0f53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:50:48.126214 HeartRateMonitor[21811:11754453] Characteristic: <2d53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:54:40.327261 HeartRateMonitor[21811:11754453] Characteristic: <0f53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:54:47.744737 HeartRateMonitor[21811:11754453] Characteristic: <2d53>, properties 18, description <CBCharacteristic: 0x610000087210>
+2017-02-03 14:54:58.431988 HeartRateMonitor[21811:11754453] Peripheral gone, Sensor CS01
